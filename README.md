@@ -38,6 +38,20 @@ Fraudulent claims cost insurers billions annually. Identifying high-risk claims 
    - Used for **dashboards, BI reports, and management analytics**
 
 
+## create github repo
+-go to terminal
+-go to the directory you want to clone the git repo and create below structure
+ 246  mkdir projectsmama
+  247  mkdir mama_portfolio
+  248  \nmkdir mama_portfolio_databricks
+  249  ls -lrt
+  250  cd mama_portfolio_databricks
+  251  mkdir -p configs notebooks modules data/raw data/processed images\n
+  252  ls -lrt
+
+
+
+
 
    
 
