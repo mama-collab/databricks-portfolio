@@ -1,14 +1,14 @@
 # databricks-portfolio
 This repo stores all the code related to Databricks project
 # Insurance Claim Fraud Detection
-## 📌 Overview
+## Overview
 This project uses Databricks to ingest, process, and analyze insurance claim data to predict fraudulent claims.  
 It implements a **medallion architecture** (Bronze → Silver → Gold) and includes ML model training, evaluation, and deployment using MLflow.
 
-## 🚀 Business Problem
+## Business Problem
 Fraudulent claims cost insurers billions annually. Identifying high-risk claims early reduces financial losses and improves claim processing efficiency.
 
-## 🧱 Architecture
+## Architecture
 1. **Ingestion (Bronze Layer):**  
    - Raw claim data ingested from cloud storage (DBFS) via **Databricks AutoLoader**.  
    - Stored in **Bronze tables** for minimal transformations.
@@ -31,7 +31,7 @@ Fraudulent claims cost insurers billions annually. Identifying high-risk claims 
    - Deploy model via **Databricks Model Serving** for real-time scoring.  
    - Real-time predictions logged back into Silver tables.
 
-6. **Gold Layer (Curated Analytics Layer):** ✅  
+6. **Gold Layer (Curated Analytics Layer):** 
    - High-quality curated tables ready for business use:  
      - `gold.insurance_fraud_features` → cleaned, engineered features for analytics  
      - `gold.insurance_fraud_predictions` → final fraud predictions with probability and timestamp  
